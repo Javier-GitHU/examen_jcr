@@ -26,8 +26,8 @@ class CustomTextFormField extends StatelessWidget {
           print('Valores de formValues: ${formValues.toString()}');
           },
           validator: (value){
-            if ( value!.length < 3){
-              return 'Minimo 3 caracteres';
+            if ( value!.length < 6){
+              return 'Minimo 6 caracteres';
             }
           },
           autovalidateMode: AutovalidateMode.onUserInteraction,

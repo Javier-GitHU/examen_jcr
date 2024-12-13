@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:examen_jcr/routes/app_routes_JCR.dart';
 import 'package:examen_jcr/widgets/custom_text_form_field.dart';
 class SigninScreenJcr extends StatelessWidget {
    
@@ -47,6 +48,8 @@ return Scaffold(
                     if (!myFormKey.currentState!.validate()) {
                       print('Formulario no valido');
                       return;
+                    }else{
+                      Navigator.pushNamed(context, AppRoutes.MenuOptions[2].route);
                     }
                   },
                   child: const SizedBox(

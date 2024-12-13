@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:examen_jcr/Screens/List_view_Screen_JCR.dart';
-
+import 'package:examen_jcr/routes/app_routes_JCR.dart';
 class Home_Screen_JCR extends StatelessWidget {
   const Home_Screen_JCR({Key? key}) : super(key: key);
   
@@ -9,10 +8,11 @@ class Home_Screen_JCR extends StatelessWidget {
     return Scaffold(
       body:Column(
       children: [
+        const SizedBox(height: 100,),
         const FlutterLogo(size: 100),
          ElevatedButton(
           onPressed: () {
-            final route = MaterialPageRoute(builder: (context) => const ListViewScreen_JCR());
+            Navigator.pushNamed(context, AppRoutes.MenuOptions[1].route);
           },
           child: const SizedBox(
           width: double.infinity,

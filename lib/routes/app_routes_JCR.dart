@@ -5,6 +5,7 @@ import 'package:examen_jcr/Screens/Reservas_Screen_JCR.dart';
 import 'package:examen_jcr/Screens/Home_Screen_JCR.dart';
 import 'package:examen_jcr/Screens/Monitores_Screen_JCR.dart';
 import 'package:examen_jcr/Screens/List_view_Screen_JCR.dart';
+import 'package:examen_jcr/Screens/Signin_Screen_JCR.dart';
 class AppRoutes {
   static const initialRoute = 'Home';
   static final MenuOptions = <MenuOption>[
@@ -13,6 +14,11 @@ class AppRoutes {
       icon: Icons.house_rounded, 
       name: 'Home Screen', 
       screen: const Home_Screen_JCR()),
+      MenuOption(
+      route: 'Sign in', 
+      icon: Icons.house_rounded, 
+      name: 'Sign in', 
+      screen: const SigninScreenJcr()),
       MenuOption(
       route: 'List', 
       icon: Icons.house_rounded, 
