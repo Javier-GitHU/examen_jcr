@@ -28,7 +28,7 @@ class AppRoutes {
       route: 'Pista', 
       icon: Icons.list_alt, 
       name: 'Pistas', 
-      screen: const PistasScreenJcr()),
+      screen: const PistasScreenJCR()),
     MenuOption(
       route: 'Monitores', 
       icon: Icons.card_membership, 
