@@ -1,1 +1,0 @@
-export 'package:examen_jcr/Screens/Home_Screen_JCR.dart';
