@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:examen_jcr/models/menu_option_JCR.dart';
 class ListViewScreen_JCR extends StatelessWidget {
    
   const ListViewScreen_JCR({Key? key}) : super(key: key);
@@ -18,10 +18,10 @@ class ListViewScreen_JCR extends StatelessWidget {
           ),
         ],
       ),
-      body: ListView(
-         children: [
-          
-         ],
+      body: ListView.separated(
+         itemBuilder: (context, index) => ListTile(
+
+         ),
       ),
     );
   }
